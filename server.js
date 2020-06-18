@@ -7,6 +7,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(req,res) {
 	res.render('pages/index');
 });
+app.get('/contact', function(req,res) {
+	res.render('pages/contactme');
+});
 
 //about page
 app.get('/about', function(req,res) {
