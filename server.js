@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var parser = require('body-parser');
-//app.use(express.static('public'));
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(parser.urlencoded({ extended: false}))
 app.use(parser.json())
@@ -40,12 +40,15 @@ app.get('/contactme',function(req,res){
 
 app.post('/contactsubmit',function(req,res){
     var data = {
-        first : req.body.fname
+        first : req.body.fname,
+        last : req.body.lname,
+        email : req.body.email,
+        message : req.body.message
     }
     console.log(data);
     res.render('pages/contactsubmit',{
         userValue : data,
-        topicHead : 'Message Submission'
+        topicHead : 'Submission Recieved!'
     });
     //res.json(student);
      
