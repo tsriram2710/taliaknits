@@ -1,8 +1,22 @@
+<head>
+    <%- include ("../partials/head") %>
+</head>
+
+<header>
+    <%- include ("../partials/header") %>
+</header>
+
 <h1><%= topicHead %></h1>
 
 <!-- views/contactsubmit.ejs -->
 
 
 <% if(userValue!=null){ %>    
-        <div> Data Entered as <%= userValue.first %>   </div>
+        <div> Name: <%= userValue.first %> <%= userValue.last %>  </div>
+        <div> Email: <%= userValue.email %>   </div>
+        <div> Message: <%= userValue.message %>   </div>
 <%}%> 
+
+<footer>
+    <%- include ("../partials/footer") %>
+</footer>

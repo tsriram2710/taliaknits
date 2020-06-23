@@ -8,7 +8,8 @@
   <div class="nav-scroller py-1 mb-2">
     <%- include ("../partials/nav") %>
   </div>
-
+  
+  
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-info">
     <div class="col-md-6 px-0">
       <h1 class="display-4 font-italic">Contact Me</h1>
@@ -20,19 +21,38 @@
   <h1 class="display-4 font-italic"><%= topicHead %></h1>
 
 <!-- views/contact.ejs -->
-<div class="form-header">
-  <h2>Send me a message</h2>
-</div>
+
 <form method="post" action="/contactsubmit" novalidate>
 
-  <div class="form-field">
-    <label for="fname">First Name</label>
+<div class="form-field">
+    <label for="fname">First Name:</label>
     <input class="input" id="fname" name="fname" type="text" value="" />
-  </div>
+</div>
+<br>
+<div class="form-field">
+  <label for="lname">Last Name:</label>
+  <input class="input" id="lname" name="lname" type="text" value="" />
+</div>
+<br>
+<div class="form-field">
+  <label for="email">Email:</label>
+  <input class="input" id="email" name="email" type="email" value="" />
+</div>
+<br>
+<div class="form-field">
+  <label for="message">Message:</label>
+  <input class="input" id="message" name="message" type="text" value="" />
+</div>
+
+   
+    
+    
+  
+
     
    
   <div class="form-actions">
-    <button class="btn" type="submit">Send</button>
+    <button class="btn btn_custom" type="submit">Submit</button>
   </div>
 </form>
 
