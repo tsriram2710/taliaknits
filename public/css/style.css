@@ -1,5 +1,6 @@
 h1 {
 	font-family: Didot;
+	text-align: center;
 }
 
 h3{
@@ -14,11 +15,16 @@ p{
 	font-family: Didot;
 }
 
-.btn_custom {
-	color:red;
+.btn-custom {
+	background-color: bg-info;
+	font-family: Didot;
 	
 }
 #fname{
-	color:red;
+	color:black;
+}
+
+.form-group {
+	font-family: Didot;
 }
 
